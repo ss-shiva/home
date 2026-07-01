@@ -1,9 +1,14 @@
 /* =============================================
    SHIVA SHANKAR S. — PORTFOLIO SCRIPTS
-   Fonts: Encode Sans (headings) + Spline Sans Mono (body)
+   Fonts: Montserrat (headings) + Inter (body)
+   Theme: IPD-inspired teal → purple light palette
    ============================================= */
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    // ── Current year in footer ────────────────
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
 
     // ── Navbar scroll effect ──────────────────
     const navbar = document.getElementById('navbar');
@@ -12,8 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
 
     // ── Active nav link on scroll ─────────────
-    const sections  = document.querySelectorAll('section[id]');
-    const navLinks  = document.querySelectorAll('.nav-menu a');
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-menu a');
 
     const sectionObserver = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -77,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // ── Smooth anchor scroll (offset for navbar) ─
+    // ── Smooth anchor scroll (offset for navbar) ──
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', e => {
             const target = document.querySelector(anchor.getAttribute('href'));
@@ -89,11 +94,5 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
-    // ── Current year in footer ────────────────
-    const yearEl = document.querySelector('footer p');
-    if (yearEl) {
-        yearEl.innerHTML = yearEl.innerHTML.replace('2026', new Date().getFullYear());
-    }
 
 });

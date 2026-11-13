@@ -32,7 +32,7 @@
         document.documentElement.dataset.theme = t || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
       })();
     </script>
-    <link rel="stylesheet" href="style.css?v=4">
+    <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 
@@ -139,59 +139,56 @@
         <!-- ===== EXPERIENCE ===== -->
         <section id="experience" class="section">
             <h2 class="sec-head reveal">Where I've Worked</h2>
-            <div class="tabs reveal">
-                <div class="tablist" role="tablist" aria-label="Positions">
-                    <button role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true">Cellcraft AI</button>
-                    <button role="tab" id="tab-1" aria-controls="panel-1" aria-selected="false" tabindex="-1">CSIR-NCL (Ph.D.)</button>
-                    <button role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1">CSIR-NCL</button>
-                    <button role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false" tabindex="-1">IISER-Pune</button>
-                    <button role="tab" id="tab-4" aria-controls="panel-4" aria-selected="false" tabindex="-1">NII</button>
-                </div>
-                <div class="panels">
-                    <div role="tabpanel" id="panel-0" aria-labelledby="tab-0" tabindex="0">
-                        <h3>Consultant (part-time) <span>@ Cellcraft AI LLC, United States</span></h3>
-                        <p class="range">Jan 2026 to present</p>
-                        <ul class="arrows">
-                            <li>Provide protein design, recombinant expression and purification, and structural and functional characterization for protein engineering projects.</li>
-                        </ul>
+            <ol class="timeline">
+                <li class="reveal">
+                    <time>Jan 2026 to present</time>
+                    <div>
+                        <h3>Consultant (part-time)</h3>
+                        <p class="where">Cellcraft AI LLC, United States</p>
+                        <p>Protein design, recombinant expression and purification, and structural and functional characterization for protein engineering projects.</p>
                     </div>
-                    <div role="tabpanel" id="panel-1" aria-labelledby="tab-1" tabindex="0" hidden>
-                        <h3>Senior Research Fellow / Project Associate <span>@ CSIR-National Chemical Laboratory, Pune</span></h3>
-                        <p class="range">Jul 2017 to Dec 2025 · Ph.D. in Biological Sciences (AcSIR)</p>
-                        <ul class="arrows">
-                            <li>Redesigned insoluble mouse Metrnl by ProteinMPNN inverse folding while preserving the predicted fold and all five native disulfide bonds. The selected variant expresses soluble in <em>E. coli</em> and retains biological activity.</li>
-                            <li>Measured fold, assembly state and thermal stability on the purified designs by circular dichroism, SEC-MALS, dynamic light scattering and isothermal titration calorimetry, and mapped interfaces by cross-linking mass spectrometry.</li>
-                            <li>Designed a <em>de novo</em> solubility tag yielding a glycation-resistant insulin proteoform. First-named inventor on issued patent WO 2024/194897 A1.</li>
-                            <li>Produced the first structural models of the Meteorin protein family with AlphaFold2/ColabFold and RoseTTAFold.</li>
-                            <li>Established structure-prediction and inverse-folding workflows for the group and trained other members in their use.</li>
-                            <li>Thesis: <em>Structural and functional characterization of Meteorin and Meteorin-like proteins.</em> Advisors: Dr. Mahesh J. Kulkarni and Dr. Sureshkumar Ramasamy.</li>
-                        </ul>
+                </li>
+                <li class="reveal">
+                    <time>Jul 2017 to Dec 2025</time>
+                    <div>
+                        <h3>Senior Research Fellow / Project Associate, and Ph.D.</h3>
+                        <p class="where">CSIR-National Chemical Laboratory (AcSIR), Pune, India</p>
+                        <p>Ph.D. in Biological Sciences. Thesis: <em>Structural and functional characterization of Meteorin and Meteorin-like proteins.</em> Advisors: Dr. Mahesh J. Kulkarni and Dr. Sureshkumar Ramasamy.</p>
+                        <p>Design followed by experimental validation on Metrnl, therapeutic protein engineering on insulin, and the first structural models of the Meteorin family.</p>
                     </div>
-                    <div role="tabpanel" id="panel-2" aria-labelledby="tab-2" tabindex="0" hidden>
-                        <h3>Project Assistant II <span>@ CSIR-National Chemical Laboratory, Pune</span></h3>
-                        <p class="range">Apr 2013 to Jul 2017 · Advisor: Dr. Hirekodathakallu V. Thulasiram</p>
-                        <ul class="arrows">
-                            <li>Cloned, mutagenized and purified class I sesquiterpene synthases from <em>Santalum album</em> through multi-step chromatography, then crystallized them by vapour diffusion with robotic screening and collected and screened the X-ray diffraction data.</li>
-                            <li>Optimized expression, purification and crystallization conditions across several members of the synthase family, from construct design through to diffraction-quality crystals (<em>Scientific Reports</em>, 2015).</li>
-                        </ul>
+                </li>
+                <li class="reveal">
+                    <time>Apr 2013 to Jul 2017</time>
+                    <div>
+                        <h3>Project Assistant II</h3>
+                        <p class="where">CSIR-National Chemical Laboratory, Pune, India · Advisor: Dr. Hirekodathakallu V. Thulasiram</p>
+                        <p>Cloned, mutagenized and purified class I sesquiterpene synthases from <em>Santalum album</em> through multi-step chromatography, then crystallized them by vapour diffusion with robotic screening and collected and screened the X-ray diffraction data. Worked from construct design through to diffraction-quality crystals across several members of the synthase family (<em>Scientific Reports</em>, 2015).</p>
                     </div>
-                    <div role="tabpanel" id="panel-3" aria-labelledby="tab-3" tabindex="0" hidden>
-                        <h3>Junior Research Fellow <span>@ IISER-Pune, India</span></h3>
-                        <p class="range">Jul 2010 to Apr 2013</p>
-                        <ul class="arrows">
-                            <li>Designed and synthesized short hybrid E-vinylogous lipopeptides whose engineered self-assembly gives broad-spectrum antimicrobial activity (<em>J. Med. Chem.</em>, 2013).</li>
-                        </ul>
+                </li>
+                <li class="reveal">
+                    <time>Jul 2010 to Apr 2013</time>
+                    <div>
+                        <h3>Junior Research Fellow</h3>
+                        <p class="where">IISER-Pune, India</p>
+                        <p>Designed and synthesized short hybrid E-vinylogous lipopeptides whose engineered self-assembly gives broad-spectrum antimicrobial activity (<em>J. Med. Chem.</em>, 2013).</p>
                     </div>
-                    <div role="tabpanel" id="panel-4" aria-labelledby="tab-4" tabindex="0" hidden>
-                        <h3>Project Trainee <span>@ National Institute of Immunology, New Delhi</span></h3>
-                        <p class="range">Jul 2009 to Apr 2010</p>
-                        <ul class="arrows">
-                            <li>Cloned, expressed and purified three <em>M. tuberculosis</em> histidine biosynthesis enzymes for crystallographic study.</li>
-                            <li>Before that: M.Sc. (2009) and B.Sc. (2007) in Biotechnology, Bharathiar University, Coimbatore.</li>
-                        </ul>
+                </li>
+                <li class="reveal">
+                    <time>Jul 2009 to Apr 2010</time>
+                    <div>
+                        <h3>Project Trainee</h3>
+                        <p class="where">National Institute of Immunology, New Delhi, India</p>
+                        <p>Cloned, expressed and purified three <em>M. tuberculosis</em> histidine biosynthesis enzymes for crystallographic study.</p>
                     </div>
-                </div>
-            </div>
+                </li>
+                <li class="reveal">
+                    <time>2007 and 2009</time>
+                    <div>
+                        <h3>B.Sc. and M.Sc. in Biotechnology</h3>
+                        <p class="where">Bharathiar University, Coimbatore, India</p>
+                    </div>
+                </li>
+            </ol>
         </section>
 
         <!-- ===== WORK ===== -->
@@ -412,6 +409,6 @@
         <p>&copy; <span id="year">2026</span> Shiva Shankar S., Ph.D. · Baltimore, MD, USA</p>
     </footer>
 
-    <script src="script.js?v=4"></script>
+    <script src="script.js?v=5"></script>
 </body>
 </html>

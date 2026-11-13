@@ -26,29 +26,6 @@ document.getElementById('themeBtn').addEventListener('click', () => {
     document.dispatchEvent(new Event('themechange'));
 });
 
-// Experience tabs: click or arrow keys
-(() => {
-    const tabs = [...document.querySelectorAll('[role="tab"]')];
-    const select = (tab) => {
-        tabs.forEach(t => {
-            const on = t === tab;
-            t.setAttribute('aria-selected', on);
-            t.tabIndex = on ? 0 : -1;
-            document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
-        });
-    };
-    tabs.forEach((tab, i) => {
-        tab.addEventListener('click', () => select(tab));
-        tab.addEventListener('keydown', e => {
-            const step = { ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 }[e.key];
-            if (!step) return;
-            e.preventDefault();
-            const next = tabs[(i + step + tabs.length) % tabs.length];
-            select(next); next.focus();
-        });
-    });
-})();
-
 // Hero: human insulin (PDB 3I40) as a small rotating C-alpha wireframe with its three disulfide bonds
 (() => {
     const canvas = document.getElementById('fold');
